@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<%@ Register Src="~/banner2.ascx" TagPrefix="uc1" TagName="banner2" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="style/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="Script/jQuery/jquery-3.1.0.min.js"></script>
+    <title></title>
+      <style type="text/css">
+        
+        .FullPage{
+            width:80%;
+            margin: 0 auto;
+            padding:1px;
+        }
+        .auto-style1 {
+            width:100%;
+            height:auto;
+        }
+       
+        #menuID {
+            width:20%;
+            vertical-align:top;
+        }
+
+        .HeadStyle{
+            font-size:xx-large;
+            background-color:#0094ff;
+            color:#ffffff;
+            text-align:center;
+            padding: 25px;
+        }
+
+        .FooterStyle{
+            font-size:small;
+            background-color:#0094ff;
+            color: #ffffff;
+            padding:2px;
+            text-align:center;
+        }
+        .middleStyle{
+            background-color:#30d7ec;
+            padding-left:10px;
+            padding-right:10px;
+            padding-top:10px;
+            height:620px;
+         
+        }
+
+    </style>
+  
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" />
+        <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
+        <div class="FullPage">
+            <table class="auto-style1">
+                <tr>
+                    <td colspan="2" class="HeadStyle">
+                       <uc1:banner2 runat="server" ID="banner2" /> 
+                    </td>
+                </tr>
+                <tr>
+                    <!-- Main Part-->
+                    <td id="menuID" class="middleStyle">
+                        <div>
+                            <asp:ContentPlaceHolder ID="MenuContentHolder" runat="server"></asp:ContentPlaceHolder>
+                        </div>
+                    </td>
+                    <td class="middleStyle" style="background-color:#8a67ec">
+                        <div>
+                            <asp:ContentPlaceHolder ID="MainContentHolder" runat="server"></asp:ContentPlaceHolder>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="FooterStyle">ritwick</td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
