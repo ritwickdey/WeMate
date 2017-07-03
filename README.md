@@ -1,7 +1,7 @@
 # WeMate
-A simple zero level chat app made with ASP.NET Form and SQL Server as Backend service.
+A simple zero level chat website made with ASP.NET Form and SQL Server as Backend service.
 
-**_[Don't expect good architecture or much more security or much features. As I mentioned it is for zero level. I build it when I was newbie in the programming world]_**
+**_[Don't expect good architecture or much more security or much features. As I mentioned it is for zero level. I built it when I was newbie in the programming world]_**
 
 ## Video Demo
 * [Youtube Link](https://www.youtube.com/watch?v=4zACchQ797o)
