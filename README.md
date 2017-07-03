@@ -21,7 +21,7 @@ If you want to run this project on your PC.
 
 2. Run `FullSQLScript.sql` to your database which is provided with the source code (Under SQL Folder). 
 
-3. Setup ConnectionString:
+3. Setup `ConnectionString`:
 
     ```Csharp
     connectionString = "Server=##Server-Name##; Database=##DATABASE-NAME##; User ID=##USER-ID##;Password=##Password## ;Integrated Security=True;"
@@ -47,4 +47,4 @@ If you want to run this project on your PC.
 
 ## LICENSE
 
-This extension is licensed under the [MIT License](LICENSE)
+[MIT License](LICENSE)
