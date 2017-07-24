@@ -17,6 +17,8 @@ A simple zero level chat website made with ASP.NET Form and SQL Server as Backen
 ## Installation
 If you want to run this project on your PC.
 
+_**[[NOTE: ALL Source files are available under `src` folder.]]**_
+
 1. Make a Database named `UserDB`.
 
 2. Run `FullSQLScript.sql` to your database which is provided with the source code (Under SQL Folder). 
